@@ -159,7 +159,7 @@ function primes(max)
 		console.log("Please enter a number.");
 		return;
 	}
-console.log("laskdfj")
+	
 	// Array to store the prime numbers
 	var primes = [];
 	
