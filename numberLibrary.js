@@ -39,12 +39,6 @@ function sillySum(numbersArray)
 // max - a number to indicate which value not to exceed when evaluating
 function numSquare(max)
 {
-	// Exit if max is not an umber
-	if (isNaN(max))
-	{
-		console.log("Please enter a number.");
-		return;
-	}
 	// Array to store perfect square numbers that do not exceed "max"
 	var perfectSquares = [];
 
