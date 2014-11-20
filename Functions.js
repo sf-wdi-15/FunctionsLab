@@ -67,7 +67,21 @@ var primeOrNot = 17;
 console.log(isPrime(primeOrNot));
 
 
-//Optimus Prime
+function isPrime(n)
+ {
+
+  for(var i = 2; i <= Math.sqrt(n); i++) {
+
+    if (n % i === 0) {
+      return false;
+    }
+  }
+     return true;
+ }
+
+
+
+//Optimus Prime (i.e)
 
 // function isPrime(n) {
 
@@ -90,7 +104,7 @@ console.log(isPrime(primeOrNot));
 
 //letter count
 
-var word = "mississippi";
+var word = "apple";
 
 var letterCount = function(letters) {
 
@@ -110,6 +124,27 @@ var letterCount = function(letters) {
 }
 
 console.log(letterCount(word));
+
+//another letter count
+
+var letterCount = function(str) {
+    var obj = {};
+
+    for (var i = 0; i<str.length; i+=1)
+    {
+      var letter = str[i];
+      if (letter in obj) {
+        obj[letter] += 1;
+      }
+      else {
+        obj[letter] = 1;
+      }
+    }
+    return obj;
+  };
+
+  console.log(letterCount('hello world'));
+
 
 
 //merge
