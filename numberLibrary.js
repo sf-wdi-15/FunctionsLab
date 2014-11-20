@@ -153,13 +153,7 @@ function isPrime(number)
 // max - a number to indicate when to stop iterating
 function primes(max)
 {
-	// Exit if max is not a number
-	if (isNaN(max))
-	{
-		console.log("Please enter a number.");
-		return;
-	}
-	
+
 	// Array to store the prime numbers
 	var primes = [];
 	
@@ -343,7 +337,7 @@ function makeLines(numberOfLines)
 // Boolean values to show/hide parts of the assignment
 var squareNumbersOn = true;
 var sillyNumbersOn = true;
-var primeNumberOn = true;
+var primeMaxOn = true;
 var primeNumbersOn = true;
 var letterTallyOn = true;
 var mergeArraysOn = true;
@@ -382,7 +376,7 @@ if (sillyNumbersOn)
 	makeLines(2);
 }
 
-if (primeNumberOn)
+if (primeMaxOn)
 {
 	console.log("PART III - PRIMALITY TEST");
 
