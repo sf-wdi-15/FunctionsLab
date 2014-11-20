@@ -16,24 +16,21 @@ var count = 0;
 
 
 
+ var maxVal = 10
+ var dumpArr = [];
 
-/*
- var numSquare = function(max) {
+ var numSquare = function(max) { 
 
-   var maxVal = 10;
-   var dumpArr = [];
-
-  for(var i = 0, i < max, i++)
-    {
-
-
+  for(var i = 0; i <= maxVal; i++){
+    square = Math.pow(i, 2);
+ 	dumpArr.push(square);
     }
-
  }
 
- console.log(numSquare(maxVal));
+console.log(numSquare(maxVal));
+console.log(dumpArr);
 
- */
+
 
 var primeOrNot = 17;
 
@@ -68,7 +65,7 @@ var primeOrNot = 17;
 console.log(isPrime(primeOrNot));
 
 
-/*
+
 
 function isPrime(n) {
 
@@ -88,6 +85,10 @@ function isPrime(n) {
     return true;
 }
 
-*/
+
+
+
+
+
 
 
