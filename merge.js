@@ -14,4 +14,4 @@ var merge = function (arrOne, arrTwo) {
   return result;
 };
 
-console.log(merge([1,3,5,8,8,8,9], [2,4,10,11,12]))
+console.log(merge([1,3,5,8,8,8,9], [2,4,10,11,12]));

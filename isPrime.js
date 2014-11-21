@@ -6,7 +6,7 @@ var isPrime = function (num) {
     }
   }
   return true;
-}
+};
 
 
-console.log(isPrime(97))
+console.log(isPrime(97));

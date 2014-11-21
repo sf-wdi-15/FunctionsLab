@@ -17,5 +17,5 @@ var sillySum = function (arr) {
   return sum;
 };
 
-var sum = sillySum([1,2,3,4])
+var sum = sillySum([1,2,3,4]);
 console.log(sum);

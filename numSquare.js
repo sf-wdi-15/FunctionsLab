@@ -7,4 +7,4 @@ var numSquare = function (max) {
   return result;
 };
 
-console.log(numSquare(25))
+console.log(numSquare(25));
