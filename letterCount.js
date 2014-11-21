@@ -7,4 +7,4 @@ var letterCount = function (word) {
   return result;
 };
 
-console.log(letterCount("apple"))
+console.log(letterCount("apple"));
