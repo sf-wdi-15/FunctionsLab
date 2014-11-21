@@ -1,5 +1,4 @@
 
-
 var numSquare = function (max) {
   var result = [];
   for (var square = index = 1; square < max; index += 1, square = index*index) {
