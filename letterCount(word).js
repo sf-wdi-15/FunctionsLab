@@ -8,84 +8,20 @@
 
 // BONUS: Make sure that lower case letters and upper case letters count for the same character. Also, ignore spaces and punctuation.
 
+// another name for the problem is a histogram from statistics, a barchart that shows frequency of each letter
+// you can access char of a string like you access elements of an array. you cannot set a value of a string, unlike arrays (particular to JS), strings are immutable.
 
-
-function count_letters(str) {
-    var counter = 0;
-
-    for (var i = 0; i < str.length; i++) {
-        var positionOfLetter = str.indexOf(str[i], i);
-
-        if (positionOfLetter > -1) {
-            counter++;
-            i = positionOfLetter;
-            console.log(i);
-        }
-    }
-    return counter;
-}
-var str = "angelo and an apple.";
-
-charAt(index)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function countLetters() {
-  var counter = 0;
-
-  for (var i = 0, input_length = input.length; i < input_length; i++) {
-      var index_of_sub = input.indexOf(input_letter, i);
-
-      if (index_of_sub > -1) {
-          counter++;
-          i = index_of_sub;
-      }
-  }
-for(var x=myArray.length -1; x >= 0; x--)
-
-
-
-
-var countLetters = function(str){
-  var letterArray = str.split('');
-  var index = letterArray.indexOf(currentLetter);
-  
-  for (i = 0; i < arr.length; i++){
-    var currentLetter = arr[i];
-    var occurances = 0;
-
-    if(currentLetter === arr.length-1){
-      occurances += 1;
+var letterCount = function(str){
+  var obj = {};
+  var string = str.replace(/\s/g, '').replace(/\W/g, '').toLowerCase(); // ensures letters counted once; removes spaces && non-word char
+  for (var i = 0; i < string.length; i++){
+    var letter = string[i]; // grabs letter at location in string
+    if (!!obj[letter]){  // if (letter is key in obj)  will return true 
+      obj[letter] += 1;  // increment the value of the letter +=1
+    } else {
+      obj[letter] = 1;   // if letter only occurs once, set value at 1
     }
   }
-
+  return obj;
 };
-compareLetter = function(letter){
-  charAt(arr[position]) |= [];
-}
-
-loop through string checking if i === to character at i
-console.log('character at index' + occurances);
-
-var finalCountDown = function(num){
-  if (var index = array.indexOf(2); === charAt(i)> 0){
-    console.log(num);
-    finalCountDown(num -= 1);
-  } else {
-    console.log("Finished");
-  }
-}
+console.dir(letterCount("Angelo! needs to learn!"));

@@ -11,8 +11,16 @@ multiplyByIndex = function(numbers){
   var num = array[i];
   var currentNum = valueOf(numbers[i]);
   
-  count += (number * index)
+  count += (number * index);
 };
 
-//get value at index
+// rewritten for Thanksgiving 2014 homework
+var multiplyAllByIndex = function(arr){
+  var counter = 0;
+  for(var i = 0; i < arr.length; i++){
+    counter += arr[i] * i;
+  }
+  return counter;
+};
 
+console.log(multiplyAllByIndex(arr));
